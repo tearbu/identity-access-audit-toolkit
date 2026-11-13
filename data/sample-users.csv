@@ -1,0 +1,21 @@
+DisplayName,UserPrincipalName,AccountEnabled,Department,CreatedDateTime,LastSignInDateTime,AssignedLicenses
+Alicia Gomez,alicia.gomez@contoso-demo.com,True,Finance,2023-02-14,2026-11-10,E5
+Marcus Webb,marcus.webb@contoso-demo.com,True,IT,2022-06-01,2026-11-11,E5
+Priya Nair,priya.nair@contoso-demo.com,True,Engineering,2024-01-22,2026-11-09,E5
+Tom Becker,tom.becker@contoso-demo.com,True,Operations,2021-09-15,2026-03-02,E3
+Svc Backup Agent,svc.backup@contoso-demo.com,True,IT,2020-04-10,,E3
+Danielle Roy,danielle.roy@contoso-demo.com,True,HR,2023-07-19,2026-11-08,E5
+Old Vendor Account,vendor.old@contoso-demo.com,True,External,2022-11-30,2025-12-18,F3
+James O'Neill,james.oneill@contoso-demo.com,False,Sales,2022-03-08,2025-08-21,E3
+Fatima Diallo,fatima.diallo@contoso-demo.com,True,Finance,2024-05-27,2026-11-11,E5
+Temp Intern 2024,temp.intern@contoso-demo.com,True,Marketing,2024-06-03,2024-09-14,F3
+Kevin Sato,kevin.sato@contoso-demo.com,True,Engineering,2023-10-02,2026-10-30,E5
+Laura Bianchi,laura.bianchi@contoso-demo.com,True,Legal,2022-08-16,2026-05-19,E5
+Svc Report Runner,svc.reports@contoso-demo.com,True,IT,2021-01-25,2026-11-01,E3
+Nina Petrova,nina.petrova@contoso-demo.com,True,Support,2024-09-09,,F3
+Omar Haddad,omar.haddad@contoso-demo.com,True,Operations,2023-04-11,2026-11-06,E5
+Grace Liu,grace.liu@contoso-demo.com,True,Engineering,2022-12-05,2026-11-11,E5
+Contractor - J. Smith,contractor.jsmith@contoso-demo.com,True,External,2025-01-13,2026-02-25,F3
+Ben Carter,ben.carter@contoso-demo.com,False,IT,2021-05-20,2026-01-09,E5
+Sofia Marino,sofia.marino@contoso-demo.com,True,Sales,2024-03-18,2026-11-10,E5
+Helpdesk Shared,helpdesk.shared@contoso-demo.com,True,IT,2020-08-31,2026-08-04,E3

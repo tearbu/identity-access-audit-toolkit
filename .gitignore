@@ -1,0 +1,10 @@
+# Generated audit output
+output/
+*.csv
+!data/*.csv
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+UserPrincipalName,DisplayName,IsAdmin,MfaRegistered,MethodsRegistered,PasswordlessCapable
+alicia.gomez@contoso-demo.com,Alicia Gomez,False,True,Authenticator;Phone,True
+marcus.webb@contoso-demo.com,Marcus Webb,True,True,Authenticator;FIDO2,True
+priya.nair@contoso-demo.com,Priya Nair,False,True,Authenticator,False
+tom.becker@contoso-demo.com,Tom Becker,False,False,,False
+svc.backup@contoso-demo.com,Svc Backup Agent,True,False,,False
+danielle.roy@contoso-demo.com,Danielle Roy,False,True,Authenticator;Phone,True
+vendor.old@contoso-demo.com,Old Vendor Account,False,False,,False
+fatima.diallo@contoso-demo.com,Fatima Diallo,False,True,Authenticator,False
+temp.intern@contoso-demo.com,Temp Intern 2024,False,False,,False
+kevin.sato@contoso-demo.com,Kevin Sato,False,True,Authenticator;Phone,False
+laura.bianchi@contoso-demo.com,Laura Bianchi,False,True,Phone,False
+svc.reports@contoso-demo.com,Svc Report Runner,False,True,Authenticator,False
+nina.petrova@contoso-demo.com,Nina Petrova,False,False,,False
+omar.haddad@contoso-demo.com,Omar Haddad,False,True,Authenticator,True
+grace.liu@contoso-demo.com,Grace Liu,True,True,Authenticator;FIDO2,True
+contractor.jsmith@contoso-demo.com,Contractor - J. Smith,False,False,,False
+sofia.marino@contoso-demo.com,Sofia Marino,False,True,Authenticator;Phone,True
+helpdesk.shared@contoso-demo.com,Helpdesk Shared,True,False,,False

@@ -1,0 +1,13 @@
+GroupName,MemberDisplayName,MemberUPN,MemberType,AccountEnabled,LastSignInDateTime
+Global Administrators,Marcus Webb,marcus.webb@contoso-demo.com,User,True,2026-11-11
+Global Administrators,Grace Liu,grace.liu@contoso-demo.com,User,True,2026-11-11
+Global Administrators,Svc Backup Agent,svc.backup@contoso-demo.com,ServiceAccount,True,
+Global Administrators,Helpdesk Shared,helpdesk.shared@contoso-demo.com,SharedAccount,True,2026-08-04
+Security Administrators,Alicia Gomez,alicia.gomez@contoso-demo.com,User,True,2026-11-10
+Security Administrators,Marcus Webb,marcus.webb@contoso-demo.com,User,True,2026-11-11
+Security Administrators,Old Vendor Account,vendor.old@contoso-demo.com,User,True,2025-12-18
+Exchange Administrators,Kevin Sato,kevin.sato@contoso-demo.com,User,True,2026-10-30
+Exchange Administrators,Temp Intern 2024,temp.intern@contoso-demo.com,User,True,2024-09-14
+Helpdesk Administrators,Omar Haddad,omar.haddad@contoso-demo.com,User,True,2026-11-06
+Helpdesk Administrators,Sofia Marino,sofia.marino@contoso-demo.com,User,True,2026-11-10
+Helpdesk Administrators,Danielle Roy,danielle.roy@contoso-demo.com,User,True,2026-11-08
