@@ -2,13 +2,13 @@
 
 PowerShell audits that answer three questions every security review asks about an identity environment:
 
-1. **Which enabled accounts have gone stale?** — accounts nobody has signed into for 90+ days, or ever, that still hold licenses and valid credentials.
-2. **Who doesn't actually have MFA?** — registration coverage graded by risk, so an admin without MFA surfaces before a standard user.
-3. **Who holds privileged access they may no longer need?** — privileged group / role membership, flagging service and shared accounts, dormant members, and groups that have grown past review size.
+1. **Which enabled accounts have gone stale?** Accounts nobody has signed into for 90+ days, or ever, that still hold licenses and valid credentials.
+2. **Who doesn't actually have MFA?** Registration coverage graded by risk, so an admin without MFA surfaces before a standard user.
+3. **Who holds privileged access they may no longer need?** Privileged group and role membership, flagging service and shared accounts, dormant members, and groups that have grown past review size.
 
-Built from hands-on identity governance work: auditing Active Directory / Entra ID environments for stale and over-privileged accounts, and automating recurring MFA and password audit checks that were previously run by hand. This repository is an original, clean-room implementation written for public sharing — it contains no employer data, systems, or internal details, and the demo tenant (`contoso-demo.com`) is fictional.
+This comes out of hands-on identity governance work: auditing Active Directory / Entra ID environments for stale and over-privileged accounts, and automating the recurring MFA and password audit checks that used to be run by hand. It is an original, clean-room implementation written for public sharing. It contains no employer data, systems, or internal details, and the demo tenant (`contoso-demo.com`) is fictional.
 
-## Quick start — no tenant required
+## Quick start: no tenant required
 
 Every script runs against bundled sample data, so you can see exactly what the audits produce before pointing them at anything real:
 
@@ -34,7 +34,7 @@ This writes per-audit CSVs and a combined `audit-summary.md` into `output\`. On 
 | `src/Get-PrivilegedGroupAudit.ps1` | Privileged group / role membership; service & shared accounts, dormant or disabled members, oversized groups | Findings to pipeline; optional CSV of full membership |
 | `src/Invoke-IdentityAccessAudit.ps1` | Runs all three and builds the combined Markdown summary | `output\audit-summary.md` + CSVs |
 
-Each script has full comment-based help — run `Get-Help .\src\Get-StaleAccountAudit.ps1 -Detailed`.
+Each script has full comment-based help. Run `Get-Help .\src\Get-StaleAccountAudit.ps1 -Detailed`.
 
 ## Running it live
 
@@ -49,11 +49,11 @@ Requirements and honest notes:
 
 - Sign-in activity (`SignInActivity`) requires an **Entra ID P1/P2 license** and the `AuditLog.Read.All` permission.
 - MFA registration data requires `UserAuthenticationMethod.Read.All`; directory roles require `RoleManagement.Read.Directory`.
-- The audits are **read-only**. They report and recommend; they never disable an account or remove a membership. Remediation stays a human decision — verify each finding with the account owner first.
+- The audits are **read-only**. They report and recommend. They never disable an account or remove a membership. Remediation stays a human decision, so verify each finding with the account owner first.
 
 ## Why this exists
 
-Recurring identity checks — stale accounts, MFA gaps, privilege drift — are exactly the kind of work that gets skipped when it is manual, and exactly the kind an auditor asks about first. Automating the collection and grading turns a day of screenshots into a report a reviewer can act on: every finding has a severity, an owner-ready explanation, and a recommended action.
+Recurring identity checks (stale accounts, MFA gaps, privilege drift) are the kind of work that gets skipped when it is manual, and they are also what an auditor asks about first. Automating the collection and grading turns a day of screenshots into a report a reviewer can act on: every finding has a severity, an explanation written for the account owner, and a recommended action.
 
 ## Roadmap
 
@@ -64,8 +64,8 @@ Recurring identity checks — stale accounts, MFA gaps, privilege drift — are 
 
 ## Disclaimer
 
-Demo data is fictional. Review any audit output in your own environment before acting on it; account names that look stale can belong to break-glass or integration accounts with legitimate reasons to exist — which is why the scripts flag and recommend, and never modify.
+Demo data is fictional. Review any audit output in your own environment before acting on it. Account names that look stale can belong to break-glass or integration accounts with legitimate reasons to exist, which is why the scripts flag and recommend, and never modify.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT. See `LICENSE`.
